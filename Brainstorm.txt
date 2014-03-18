@@ -1,0 +1,6 @@
+LOWELL LIST
+
+1. Post (pictures later) with (description, name, grade, registry, contact info[email or cell #])
+2. Comment responses to posts 
+3. Categories (fucntional equivalent of subreddits)
+4. Search bar
