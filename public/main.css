@@ -1,6 +1,18 @@
 body {
-  background-color: white;
-  font-family: Helvetica, Arial, sans-serif;
+  background-image: url('http://wallpaper.pickywallpapers.com/1600x1200/soft-background.jpg');
+}
+#header {
+  text-align: center;
+  font-style: Courier;  
+}
+
+#body {
+  text-align: center;
+  color:white;
+}
+#Categories {
+  text-align: center; 
+  color:red;
 }
 
 #page {
@@ -21,6 +33,7 @@ body {
 #page nav li {
   display: inline-block; /* This makes the list display left-to-right rather than top-to-bottom */
   margin-right: 10px;
+  color:red;
 }
 
 #post-form textarea {
