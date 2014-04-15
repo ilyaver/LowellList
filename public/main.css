@@ -1,5 +1,10 @@
 body {
-  background-image: url('http://wallpaper.pickywallpapers.com/1600x1200/soft-background.jpg');
+  background-color: black;
+}
+
+.inputs {
+  margin: 10px;
+
 }
 #header {
   text-align: center;

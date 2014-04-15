@@ -6,27 +6,42 @@
 	</head>
 <h1 id="header" >Lowell List</h1>
 
+<% if params[:error] %>
+  <h2>You're Great! I love you, but please make sure you enter all information.</h2>
+<% elsif params[:success] %>
+  <h2>Success!  New post created.</h2>
+<% end %>
+
 <div id="post-form">
-<!--   <form action="/posts" method="post">
-    <div>
-		
-  <form action="/posts" method="description">
-  	<div>
-  		<textarea name="description"></textarea>
-  	</div>
-  </form>		 -->
+
+Hello!
+  
   <form action="/posts" method="post">		   
-   	<div>
-      <input name="name" type="text" placeholder="name">
-      <input name="contact" type="text" placeholder="contact">
-      <input name="grade" type="text" placeholder="grade">
-      <input name="description" type="text" placeholder="Description">
+   	<div class="inputs">
+      <input name="name" type="text" placeholder="Your Name">
+      <input name="contact" type="text" placeholder="Contact Information">
+      <input name="grade" type="text" placeholder="Grade">
+      <textarea name="description" placeholder="Item Description"></textarea>
+    </div>
+    <div>
       <input type="submit" value="Post">
-   </form> 
     </div>
   </form>
 </div>
 
-Hello!
+<ol class="post-list">
+  <% posts.each do |post| %>
+    <li>
+      <p><%= post.created_at.strftime('%A, %B %-d, %Y') %></p>
+      <p><%= escape(post.description) %></p>
+      <p><%= escape(post.contact) %></p>
+      <p><%= escape(post.grade) %></p>
+      <p><%= escape(post.name) %></p>
+    </li>
+  <% end %>
+</ol>
+
+<ol class="post-list">
+
 
 <html>
