@@ -30,16 +30,23 @@
 <ol class="post-list">
   <% posts.each do |post| %>
     <li>
-      <p><%= post.created_at.strftime('%A, %B %-d, %Y') %></p>
-      <p><%= escape(post.description) %></p>
-      <p><%= escape(post.contact) %></p>
-      <p><%= escape(post.grade) %></p>
-      <p><%= escape(post.name) %></p>
+      <div class="post">
+        <div class="post-metadata">
+          <div class="post-author">
+            <%= post.name %> (<%= post.contact %>)
+          </div>
+          <div class="post-grade">
+          <%= escape(post.grade) %>
+          </div>
+
+          <div class="post-time">
+            <%= post.created_at.strftime('%A, %B %-d, %Y') %>
+          </div>          
+        </div>
+        <div class="post-description">
+          <%= escape(post.description) %>
+        </div>
+      </div>
     </li>
   <% end %>
 </ol>
-
-<ol class="post-list">
-
-
-<html>

@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
 }
 
 .button {
@@ -31,12 +31,13 @@ body {
   font-weight:bold;
   font-style:normal;
   height:40px;
-  line-height:40px;
+  line-height:35px;
   width:100px;
   text-decoration:none;
   text-align:center;
   text-shadow:1px 1px 0px #810e05;
 }
+
 .button:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c22213), color-stop(1, #f24537) );
   background:-moz-linear-gradient( center top, #c22213 5%, #f24537 100% );
@@ -93,6 +94,32 @@ body {
   padding: 4px;
   margin: 10px;
      }
+
+.post-list li {
+  border: 5px solid red;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  list-style-type: none;
+}
+
+.post .post-metadata {
+  padding: 12px;
+  position: relative;
+}
+
+.post .post-metadata .post-author {
+  /*display: inline-block;*/
+}
+
+.post .post-metadata .post-time {
+  /*display: inline-block;*/
+}
+
+.post .post-description {
+  padding: 12px;
+  text-align: left;
+}
+
 #header {
   text-align: center;
   font-style: Courier;
@@ -103,7 +130,7 @@ body {
 
 #body {
   text-align: center;
-  color:red;
+  
 }
 #Categories {
   text-align: center; 
