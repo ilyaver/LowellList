@@ -13,18 +13,16 @@
 <% end %>
 
 <div id="post-form">
-
-Hello!
   
   <form action="/posts" method="post">		   
-   	<div class="inputs">
-      <input name="name" type="text" placeholder="Your Name">
-      <input name="contact" type="text" placeholder="Contact Information">
-      <input name="grade" type="text" placeholder="Grade">
-      <textarea name="description" placeholder="Item Description"></textarea>
+   	<div class="textbox">
+      <input class="name" name="name" type="text" placeholder="Your Name">
+      <input class="contact" name="contact" type="text" placeholder="Contact Information">
+      <input class="grade" name="grade" type="text" placeholder="Grade">
+      <textarea class="description" name="description" placeholder="Item Description"></textarea>
     </div>
     <div>
-      <input type="submit" value="Post">
+      <input class="button" type="submit" value="Post">
     </div>
   </form>
 </div>

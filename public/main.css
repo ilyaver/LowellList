@@ -2,13 +2,103 @@ body {
   background-color: black;
 }
 
-.inputs {
-  margin: 10px;
-
+.button {
+  -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+  box-shadow:inset 0px 1px 0px 0px #f5978e;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c22213) );
+  background:-moz-linear-gradient( center top, #f24537 5%, #c22213 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c22213');
+  background-color:#f24537;
+  -webkit-border-top-left-radius:20px;
+  -moz-border-radius-topleft:20px;
+  border-top-left-radius:20px;
+  -webkit-border-top-right-radius:20px;
+  -moz-border-radius-topright:20px;
+  border-top-right-radius:20px;
+  -webkit-border-bottom-right-radius:20px;
+  -moz-border-radius-bottomright:20px;
+  border-bottom-right-radius:20px;
+  -webkit-border-bottom-left-radius:20px;
+  -moz-border-radius-bottomleft:20px;
+  border-bottom-left-radius:20px;
+  text-indent:0;
+  border:1px solid #d02718;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  font-style:normal;
+  height:40px;
+  line-height:40px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #810e05;
 }
+.button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c22213), color-stop(1, #f24537) );
+  background:-moz-linear-gradient( center top, #c22213 5%, #f24537 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c22213', endColorstr='#f24537');
+  background-color:#c22213;
+}.button:active {
+  position:relative;
+  top:1px; 
+  }
+.name {
+  background-color: white;
+  border: Defaultpx solid #00ff00;
+  color: black;
+  font-size: 14;
+  font-family: arial;
+  font-style: normal;
+  font-weight: ;
+  padding: 4px;
+    margin: 2px;
+
+     }
+.grade {
+  background-color: white;
+  border: Defaultpx groove #00ff00;
+  color: black;
+  font-size: 14;
+  font-family: arial;
+  font-style: normal;
+  font-weight: ;
+  padding: 4px;
+    margin: 2px;
+
+     }
+.contact {
+  background-color: white;
+  border: Defaultpx solid #00ff00;
+  color: black;
+  font-size: 14;
+  font-family: arial;
+  font-style: normal;
+  font-weight: ;
+  padding: 4px;
+    margin: 2px;
+
+     }
+.description {
+  background-color: white;
+  border: Defaultpx solid #00ff00;
+  color: black;
+  font-size: 14;
+  font-family: arial;
+  font-style: normal;
+  font-weight: ;
+  padding: 4px;
+  margin: 10px;
+     }
 #header {
   text-align: center;
-  font-style: Courier;  
+  font-style: Courier;
+  color:red;
+  font-family: cursive;
+  font-size: 48px ;   
 }
 
 #body {
