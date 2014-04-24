@@ -13,6 +13,12 @@ end
 get '/categories' do
   erb :categories
 end
+get '/about' do
+  erb :about
+end
+get '/contact' do
+  erb :contact
+end
 
 post '/posts' do
   if params[:description].empty?

@@ -1,9 +1,12 @@
 body {
   background-color: white;
+  margin: 0;
 }
 
 .category-list {
   text-align: left;
+  color:red;
+
 
 }
 .button {
@@ -128,7 +131,7 @@ body {
   text-align: center;
   font-style: Courier;
   color:red;
-  font-family: cursive;
+  font-family: serif;
   font-size: 48px ;   
 }
 
@@ -169,4 +172,42 @@ body {
 
 #content {
   font
+}
+
+#nav-plus-head-wrapper {
+    background: white;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right:0px;
+}
+
+#topheader {
+ color:white;
+}
+
+#topnav {
+    background: red;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.navli {
+    display: inline;
+    color:white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+  color: white;
 }
