@@ -107,24 +107,41 @@ body {
   border-radius: 10px;
   margin-bottom: 6px;
   list-style-type: none;
+  padding-bottom: 10px;
+  padding-top: 10px; 
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.post .post-metadata {
-  padding: 12px;
-  position: relative;
+
+}
+.post .post-metadata .text-description{
+  text-decoration: underline;
+
 }
 
-.post .post-metadata .post-author {
-  /*display: inline-block;*/
+.field {
+  text-decoration: underline;
 }
+
+.post table {
+  margin-left: 20px;
+}
+.post td {
+  padding-right: 20px;
+}
+
+.post-list .post-time {
+  text-align: right;
+  }
 
 .post .post-metadata .post-time {
   /*display: inline-block;*/
 }
 
-.post .post-description {
-  padding: 12px;
-  text-align: left;
+.post-list .post-description {
+  margin-bottom: 12px;
+  margin-top: 0px;
 }
 
 #header {
