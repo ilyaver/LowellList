@@ -1,11 +1,31 @@
 body {
-  background-color: white;
+  background-image: url('iguana.jpg');
 }
 
-.category-list {
-  text-align: left;
+
+
+#category-list {
+float: left;
+background: white;
+width:800px;
+}
+#category-list li {
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+float: left;
+border-left: 1px solid #dcdcdc;
+margin-top: .2em;
+text-align: center;
+margin-left: -1px;
+height: 100%;
+width: 16.5%;
+display: table;
+color: black;
 
 }
+
+
 .button {
   -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
   -webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
@@ -109,26 +129,30 @@ body {
 .post .post-metadata {
   padding: 12px;
   position: relative;
+    color: white;
 }
 
-.post .post-metadata .post-author {
+.post .post-metadata .post-author {  
+  color: white;
+
   /*display: inline-block;*/
 }
 
 .post .post-metadata .post-time {
+    color: white;
   /*display: inline-block;*/
 }
 
 .post .post-description {
   padding: 12px;
   text-align: left;
+  color: white;
 }
 
 #header {
   text-align: center;
   font-style: Courier;
   color:red;
-  font-family: cursive;
   font-size: 48px ;   
 }
 
@@ -136,9 +160,10 @@ body {
   text-align: center;
   
 }
-#Categories {
+h1 {
   text-align: center; 
   color:red;
+  background-color: gray;
 }
 
 #page {
@@ -168,5 +193,6 @@ body {
 }
 
 #content {
-  font
+  font: verdana;
 }
+
