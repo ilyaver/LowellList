@@ -5,7 +5,7 @@ body {
 
 .category-list {
   text-align: left;
-  color:red;
+  color: blue;
 
 
 }
@@ -113,13 +113,6 @@ body {
   padding-right: 10px;
 }
 
-
-}
-.post .post-metadata .text-description{
-  text-decoration: underline;
-
-}
-
 .field {
   text-decoration: underline;
 }
@@ -135,8 +128,6 @@ body {
   text-align: right;
   }
 
-.post .post-metadata .post-time {
-  /*display: inline-block;*/
 }
 
 .post-list .post-description {
@@ -218,7 +209,7 @@ body {
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:hover {
@@ -226,5 +217,5 @@ a:hover {
     color: black;
 }
 a:visited {
-  color: white;
+  color: black;
 }

@@ -23,20 +23,17 @@
 <% end %>
 
 <div id="post-form">
-  
+
   <form action="/posts" method="post">
    	<div class="textbox">
       <input class="name" name="name" type="text" placeholder="Your Name">
       <input class="contact" name="contact" type="text" placeholder="Email Address">
       <input class="grade" name="grade" type="text" placeholder="Grade">
-      <select name="category_id">
+      <select name="category">
         <option value="" selected>--Select Category--</option>
-        <option value="AP Books">AP Books</option>
-        <option value="Calculators">Calculators</option>
-        <option value="Cap and Gowns">Cap and Gowns</option>
-        <option value="Notes">Notes</option>
-        <option value="SAT/ACT Prep">SAT/ACT Prep</option>
-        <option value="Lowell Gear">Lowell Gear</option>
+        <% Post::CATEGORIES.each do |category_name| %>
+          <option value="<%= category_name %>"><%= category_name %></option>
+        <% end %>
       </select>
       <textarea class="description" name="description" placeholder="Item Description"></textarea>
     </div>
