@@ -57,4 +57,12 @@ A{text-decoration:none}
 
 
 
+ <ol class="category-list">
+    <% Post::CATEGORIES.each do |category_name| %>
+            <li><a rel="stylesheet" href="/?category=<%= category_name %>"><%= category_name %></a></li>
+     <% end %>
+
+</ol>
+
+
 </html>

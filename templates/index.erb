@@ -23,12 +23,18 @@
 <% end %>
 
 <div id="post-form">
-  
-  <form action="/posts" method="post">		   
+
+  <form action="/posts" method="post">
    	<div class="textbox">
       <input class="name" name="name" type="text" placeholder="Your Name">
       <input class="contact" name="contact" type="text" placeholder="Email Address">
       <input class="grade" name="grade" type="text" placeholder="Grade">
+      <select name="category">
+        <option value="" selected>--Select Category--</option>
+        <% Post::CATEGORIES.each do |category_name| %>
+          <option value="<%= category_name %>"><%= category_name %></option>
+        <% end %>
+      </select>
       <textarea class="description" name="description" placeholder="Item Description"></textarea>
     </div>
     <div>
@@ -62,11 +68,7 @@
             <td><%= escape(post.grade) %></td>
           </tr>
          </table>
-
-              
         </div>
-        
-      </div>
     </li>
   <% end %>
 </ol>

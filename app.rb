@@ -28,11 +28,12 @@ post '/posts' do
 
   elsif params[:contact].empty?
     redirect to('/?error=1')
-
   elsif params[:grade].empty?
     redirect to('/?error=1')
+  elsif !Post::CATEGORIES.include?(params[:category])
+    redirect to('/?error=1')
   else
-    Post.create(:description => params[:description], :name => params[:name], :contact => params[:contact],  :grade => params[:grade])
+    Post.create(:description => params[:description], :name => params[:name], :contact => params[:contact],  :grade => params[:grade], :category => params[:category])
     redirect to('/?success=1')
   end
 end
