@@ -4,6 +4,16 @@
 		<link rel="stylesheet" href="/normalize.css">
   		<link rel="stylesheet" href="/main.css">
 	</head>
+    <nav id="topnav">
+        <ul id="topnav-ul">
+            <li class="navli"><a href="/">Home</a></li>
+            <li class="navli"><a href="/about">About</a></li>
+            <li class="navli"><a href="/categories">Categories</a></li>
+            <li class="navli"><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
 <h1 id="header" >Lowell List</h1>
 
 <% if params[:error] %>
@@ -17,7 +27,7 @@
   <form action="/posts" method="post">		   
    	<div class="textbox">
       <input class="name" name="name" type="text" placeholder="Your Name">
-      <input class="contact" name="contact" type="text" placeholder="Contact Information">
+      <input class="contact" name="contact" type="text" placeholder="Email Address">
       <input class="grade" name="grade" type="text" placeholder="Grade">
       <textarea class="description" name="description" placeholder="Item Description"></textarea>
     </div>
@@ -30,22 +40,32 @@
 <ol class="post-list">
   <% posts.each do |post| %>
     <li>
-      <div class="post">
-        <div class="post-metadata">
-          <div class="post-author">
-            <%= post.name %> (<%= post.contact %>)
-          </div>
-          <div class="post-grade">
-          <%= escape(post.grade) %>
-          </div>
-
-          <div class="post-time">
+      <div class="post-time">
             <%= post.created_at.strftime('%A, %B %-d, %Y') %>
-          </div>          
+      </div>     
+
+      <div class="post-description">
+          <strong><%= escape(post.description) %></strong>
+      </div>
+      <div class="post">
+        <table>
+          <tr>
+            <td class="field">Name of Student: </td>
+            <td><%= post.name %></td>
+          </tr>
+          <tr>
+            <td class="field">Email Address: </td>
+            <td><%= escape(post.contact) %></td>
+          </tr>
+          <tr>
+            <td class="field">Grade of Student: </td>
+            <td><%= escape(post.grade) %></td>
+          </tr>
+         </table>
+
+              
         </div>
-        <div class="post-description">
-          <%= escape(post.description) %>
-        </div>
+        
       </div>
     </li>
   <% end %>

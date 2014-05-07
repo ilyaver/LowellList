@@ -1,12 +1,45 @@
 body {
-  background-image: url('iguana.jpg');
+  background-image: url('chicago.jpeg');
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  margin: 0;
+}
+#category-list,
+#category-list ul {
+    list-style: none;
+}
+#category-list {
+    float: left;
+}
+#category-list > li {
+    float: left;
+}
+#category-list li a {
+display: block;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 1.5em;
+    text-decoration: none;
+}
+#category-list ul {
+    position: absolute;
+    display: none;
+z-index: 999;
+}
+#category-list ul li a {
+    width: 80px;
+}
+#category-list li:hover ul {
+    display: block;
 }
 
 
 
 #category-list {
 float: left;
-background: white;
+background: red;
 width:800px;
 }
 #category-list li {
@@ -22,6 +55,12 @@ height: 100%;
 width: 16.5%;
 display: table;
 color: black;
+
+}
+
+.category-list {
+  text-align: left;
+  color:red;
 
 }
 
@@ -124,35 +163,62 @@ color: black;
   border-radius: 10px;
   margin-bottom: 6px;
   list-style-type: none;
+  padding-bottom: 10px;
+  padding-top: 10px; 
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 
 .post .post-metadata {
   padding: 12px;
   position: relative;
     color: white;
-}
 
+}
+.post .post-metadata .text-description{
+  text-decoration: underline;
+  color:white;
+  }
 .post .post-metadata .post-author {  
   color: white;
 
   /*display: inline-block;*/
 }
 
+.field {
+  text-decoration: underline;
+}
+
+.post table {
+  margin-left: 20px;
+}
+.post td {
+  padding-right: 20px;
+}
+
+.post-list .post-time {
+  text-align: right;
+  }
+
 .post .post-metadata .post-time {
     color: white;
   /*display: inline-block;*/
 }
 
-.post .post-description {
+.post-list .post-description {
   padding: 12px;
   text-align: left;
   color: white;
+ margin-bottom: 12px;
+  margin-top: 0px;
 }
 
 #header {
   text-align: center;
   font-style: Courier;
   color:red;
+  font-family: serif;
   font-size: 48px ;   
 }
 
@@ -196,3 +262,41 @@ h1 {
   font: verdana;
 }
 
+
+#nav-plus-head-wrapper {
+    background: white;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right:0px;
+}
+
+#topheader {
+ color:white;
+}
+
+#topnav {
+    background: red;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.navli {
+    display: inline;
+    color:white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+  color: white;
+}
